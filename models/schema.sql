@@ -1,3 +1,0 @@
-DROP DATABASE IF EXISTS coffee_db;
-
-CREATE DATABASE coffee_db;
