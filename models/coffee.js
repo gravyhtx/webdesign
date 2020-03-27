@@ -1,30 +1,30 @@
-module.exports = function(sequelize, DataTypes) {
-  const Coffee = sequelize.define("Coffee", {
-    name: {
-      type: DataTypes.STRING,
-      allowNull: false,
-      validate: {
-        len: {
-          args: [1, 100],
-          msg: "Name must be 1-100 characters in length"
-        }
-      }
-    },
-    description: {
-      type: DataTypes.TEXT,
-      allowNull: false,
-      len: [1]
-    },
-    size_oz: {
-      type: DataTypes.INTEGER,
-      validate: {
-        min: 8,
-        max: 16
-      }
-    }
-  });
-  return Coffee;
-};
+// module.exports = function(sequelize, DataTypes) {
+//   const Coffee = sequelize.define("Coffee", {
+//     name: {
+//       type: DataTypes.STRING,
+//       allowNull: false,
+//       validate: {
+//         len: {
+//           args: [1, 100],
+//           msg: "Name must be 1-100 characters in length"
+//         }
+//       }
+//     },
+//     description: {
+//       type: DataTypes.TEXT,
+//       allowNull: false,
+//       len: [1]
+//     },
+//     size_oz: {
+//       type: DataTypes.INTEGER,
+//       validate: {
+//         min: 8,
+//         max: 16
+//       }
+//     }
+//   });
+//   return Coffee;
+// };
 
 /*
 Coffee

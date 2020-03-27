@@ -1,5 +1,5 @@
 var db = require("../models");
-var passport = require("../config/passport");
+// var passport = require("../config/passport");
 
 module.exports = function(app) {
   // Route which allow user to view all coffee within the database
