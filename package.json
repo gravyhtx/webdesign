@@ -1,7 +1,7 @@
 {
-  "name": "Just Coffee",
+  "name": "gravyhtx",
   "version": "1.0.0",
-  "description": "Project 2 Starter",
+  "description": "Web design portfolio",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
