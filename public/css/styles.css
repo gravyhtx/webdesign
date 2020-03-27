@@ -7,13 +7,12 @@ body {
     margin: 0 auto;
     width: 100%;
     color: #c0d0e4 !important;
-    background-color: rgb(12, 12, 12);
+    background-color: rgb(15, 15, 15);
     background-size: cover;
     scroll-behavior: smooth;
     cursor: default;
     font-family: Helvetica, "Poppins", "Open Sans";
     font-size: 20px;
-    /* text-align: center; */
 }
 
 a {
@@ -77,7 +76,7 @@ a:hover {
 
 
 
-#coffee1 {
+#porfolio1 {
     width: 2000px;
     object-fit: contain;
     position: absolute;
@@ -155,21 +154,6 @@ a:hover {
     font-size: 28px;
 }
 
-.coffeet {
-    /* min-height: 1000px; */
-    width: 25%;
-    width: 25%;
-    /* margin-left: 100px; */
-    border: 25px solid rgb(250, 255, 203);
-    margin: 0 auto !important;
-    margin-top: 60px !important;
-    display: block !important;
-    text-align: center !important;
-}
-
-#coffeet {
-    margin-bottom: 100px !important;
-}
 
 .white {
     background-color: white !important;
@@ -450,7 +434,7 @@ a:hover {
         font-size: 16px;
     }
 
-    .coffeet {
+    .porfoliot {
         /* height: 200px; */
         border: 10px solid rgb(250, 255, 203);
         margin-left: 10px;

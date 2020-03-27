@@ -3,11 +3,16 @@
 <head>
 
     <meta charset="utf-8">
+    <meta name="description" content="@gravyhtx // Gravy Design Co. design service site for full stack web development">
+    <link rel="manifest" href="/manifest.webmanifest">
+    <link rel="canonical" href="https://localhost:3000"/>
     <meta name="format-detection" content="telephone=no">
     <meta name="msapplication-tap-highlight" content="no">
     <meta name="viewport" content="initial-scale=1, width=device-width">
+    <meta name="theme-color" content="#808080">
+    {{!-- Link: "/; rel=canonical" --}}
     
-    <title>Gravy HTX</title>
+    <title>Gravy Design Co. // Web Development</title>
 
     {{!-- MAIN STYLE --}}
     <link rel="stylesheet" href="css/styles.css">
@@ -26,6 +31,9 @@
 
     {{!-- AOS --}}
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    {{!-- APPLE TOUCH ICON --}}
+    <link rel="apple-touch-icon" href="public/images/icons/icon-192x192.png">
 
 </head>
 
@@ -68,6 +76,18 @@
 
     {{!-- MAIN JAVASCRIPT --}}
     <script type="text/javascript" src ="/js/index.js"></script>
+
+    {{!-- SERVICE WORKER --}}
+    <script>
+    if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+        navigator.serviceWorker.register("service-worker.js")
+            .then(reg => {
+            console.log("Service worker found.", reg);
+            });
+        });
+        }
+    </script>
 
 
 </body>
