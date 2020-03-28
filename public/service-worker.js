@@ -1,7 +1,9 @@
 console.log("Service worker linked")
 
+// clear();
+
 const FILES_TO_CACHE = [
-    "/",
+    // "/",
     "css/styles.css",
     "images/jc01.jpg",
     "images/spg1.jpg",
@@ -10,7 +12,7 @@ const FILES_TO_CACHE = [
     "images/icons/icon-72x72.png",
     "images/icons/icon-96x96.png",
     "images/icons/icon-128x128.png",
-    "images/icons/icon-144x144.png",
+    // "images/icons/icon-144x144.png", 
     "images/icons/icon-152x152.png",
     "images/icons/icon-192x192.png",
     "images/icons/icon-384x384.png",
@@ -55,63 +57,63 @@ function requestHandler(req, res) {
 
 // fetch
 self.addEventListener("fetch", function(evt) {
-// cache successful requests to the API
-if (evt.request.url.includes("/api/")) {
+  // cache successful requests to the API
+  if (evt.request.url.includes("/api/")) {
     evt.respondWith(
-    caches.open(DATA_CACHE_NAME).then(cache => {
+      caches.open(DATA_CACHE_NAME).then(cache => {
         return fetch(evt.request)
-        .then(response => {
+          .then(response => {
             // If the response was good, clone it and store it in the cache.
             if (response.status === 200) {
-            cache.put(evt.request.url, response.clone());
+              cache.put(evt.request.url, response.clone());
             }
 
             return response;
-        })
-        .catch(err => {
+          })
+          .catch(err => {
             // Network request failed, try to get it from the cache.
             return cache.match(evt.request);
-        });
-    }).catch(err => console.log(err))
+          });
+      }).catch(err => console.log(err))
     );
 
     return;
-}
+  }
 
-// if the request is not for the API, serve static assets using "offline-first" approach.
-// see https://developers.google.com/web/fundamentals/instant-and-offline/offline-cookbook#cache-falling-back-to-network
-evt.respondWith(
+  // if the request is not for the API, serve static assets using "offline-first" approach.
+  // see https://developers.google.com/web/fundamentals/instant-and-offline/offline-cookbook#cache-falling-back-to-network
+  evt.respondWith(
     caches.match(evt.request).then(function(response) {
-    return response || fetch(evt.request);
+      return response || fetch(evt.request);
     })
-);
+  );
 });
 
 
   
-self.addEventListener("fetch", function(event) {
-    event.respondWith(
-      fetch(event.request).catch(function(error) {
-        console.log(
-          "[Service Worker] Network request Failed. Serving content from cache: " +
-            error
-        );
-        //Check to see if you have it in the cache
-        //Return response
-        //If not in the cache, then return error page
-        return caches
-          .open(
-            "sw-precache-v3-sw-precache-webpack-plugin-https://silent-things.surge.sh"
-          )
-          .then(function(cache) {
-            return cache.match(event.request).then(function(matching) {
-              var report =
-                !matching || matching.status == 404
-                  ? Promise.reject("no-match")
-                  : matching;
-              return report;
-            });
-          });
-      })
-    );
-  });
+// self.addEventListener("fetch", function(event) {
+//     event.respondWith(
+//       fetch(event.request).catch(function(error) {
+//         console.log(
+//           "[Service Worker] Network request Failed. Serving content from cache: " +
+//             error
+//         );
+//         //Check to see if you have it in the cache
+//         //Return response
+//         //If not in the cache, then return error page
+//         return caches
+//           .open(
+//             "sw-precache-v3-sw-precache-webpack-plugin-https://silent-things.surge.sh"
+//           )
+//           .then(function(cache) {
+//             return cache.match(event.request).then(function(matching) {
+//               var report =
+//                 !matching || matching.status == 404
+//                   ? Promise.reject("no-match")
+//                   : matching;
+//               return report;
+//             });
+//           });
+//       })
+//     );
+//   });

@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="description" content="@gravyhtx // Gravy Design Co. design service site for full stack web development">
     <link rel="manifest" href="/manifest.webmanifest">
-    <link rel="canonical" href="https://localhost:3000"/>
+    <link rel="canonical" href="https://localhost:3000">
     <meta name="format-detection" content="telephone=no">
     <meta name="msapplication-tap-highlight" content="no">
     <meta name="viewport" content="initial-scale=1, width=device-width">
@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="css/styles.css">
 
     {{!-- MATERIALIZE ICONS --}}
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    {{!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> --}}
 
     {{!-- MATERIALIZE CDN --}}
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
@@ -69,10 +69,13 @@
     <script>M.AutoInit();</script>
 
     {{!-- AOS --}}
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/aos@2.0.0/dist/aos.js"></script>
 
     {{!-- AOS INIT  --}}
-    <script>AOS.init();</script>
+    <script>AOS.init({
+        easing: 'ease-in-out-sine'
+      });
+    </script>
 
     {{!-- MAIN JAVASCRIPT --}}
     <script type="text/javascript" src ="/js/index.js"></script>
