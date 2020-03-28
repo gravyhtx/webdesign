@@ -1857,7 +1857,8 @@ a:hover {
     }
 
     .img-main {
-        margin-bottom: 250px;
+        margin-bottom: -20px;
+        width: 70%;
     }
     .blueish {
         padding: 5px !important;
@@ -1908,6 +1909,11 @@ a:hover {
     .h3profile {
         font-size: 20px;
     }
+
+    .brighten img {
+      -webkit-filter: brightness(100%);
+  }
+
 }
 
 /* Mobile Styles */
@@ -1946,7 +1952,7 @@ a:hover {
     }
 
     .img-main {
-        margin-bottom: -20px;
+        margin-bottom: -40px;
     }
 
     .margin-bottom {
@@ -1994,11 +2000,7 @@ a:hover {
         margin-bottom: 300px !important;
     }
 
-    .brighten img {
-        -webkit-filter: brightness(100%);
-    }
-
 }
 
 
-/* screen lines Copyright (c) 2020 by Konstantin (https://codepen.io/fearOfCode/pen/FsGtu)  */
+/* glitch effect based on code by Konstantin (https://codepen.io/fearOfCode/pen/FsGtu) Copyright (c) 2020  */
