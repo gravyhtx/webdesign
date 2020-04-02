@@ -138,6 +138,27 @@ a:hover {
     animation: flicker 4s linear infinite;
 }
 
+
+.clients-header {
+  font-size: 28px !important;
+  margin-bottom: 15px;
+}
+
+.clients {
+  margin-bottom: 8px;
+  font-size: 18px;
+}
+
+.client-box {
+  padding-left: 50px;
+  padding-right: 50px;
+  text-align: center;
+}
+
+.less-margin {
+  margin-bottom: -40px !important;
+}
+
 .img-audit {
     width: 50%;
     display: block;
@@ -251,7 +272,7 @@ a:hover {
 
 .droids {
     text-align: right !important;
-    margin-right: 100px;
+    margin-right: 50px;
     margin-bottom: 50px;
 }
 
@@ -425,6 +446,10 @@ a:hover {
     padding: 30px !important;
     text-align: center !important;
     font-size: 18px;
+}
+
+.download {
+  font-size: 12px;
 }
 
 .right {
@@ -1870,7 +1895,10 @@ a:hover {
 }
 
 
-
+@media only screen and (max-width: 1300px) {
+    .huttese-first {
+      font-size: 100px !important;
+    }
 
 /* iPad Styles */
 
