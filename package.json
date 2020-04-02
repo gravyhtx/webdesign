@@ -3,8 +3,13 @@
   "version": "1.0.0",
   "description": "Web design portfolio",
   "main": "server.js",
+  "homepage": "https://gravyhtx.github.io/employeedirectory",
   "scripts": {
-    "start": "node server.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -b master -d build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
     "lint": "eslint --quiet .",
     "fix": "eslint --fix .",
     "test": "npm run lint && cross-env NODE_ENV=test mocha -u tdd --reporter spec --exit"

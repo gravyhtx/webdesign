@@ -24,6 +24,15 @@ a:hover {
     color: #9fbff1 !important;
 }
 
+.links {
+  color: #7487aa !important;
+}
+
+.links:hover {
+  cursor: default;
+  color: #4475ca !important;
+}
+
 .body {
     text-align: center;
 }
@@ -48,11 +57,11 @@ a:hover {
   z-index: 100;
 }
 
-.glow {
+/* .glow {
     -webkit-animation: glow 5s ease-in-out infinite alternate;
     -moz-animation: glow 5s ease-in-out infinite alternate;
     animation: glow 5s ease-in-out infinite alternate;
-}
+} */
 
 @-webkit-keyframes glow {
     from {
@@ -241,9 +250,9 @@ a:hover {
 }
 
 .droids {
-    text-align: right;
+    text-align: right !important;
     margin-right: 100px;
-    margin-bottom: 300px;
+    margin-bottom: 50px;
 }
 
 .more {
@@ -328,6 +337,7 @@ a:hover {
 .blueish {
     background-color: #c0d0e4 !important;
     color: #2f2f2f91 !important;
+    border: 30px solid white;
     padding-bottom: 50px;
 }
 
@@ -346,6 +356,12 @@ a:hover {
 
 .sm-cart {
     font-size: 14px;
+}
+
+.huttese-first {
+  font-size: 200px;
+  margin-right: 40px;
+  text-align: left !important;
 }
 
 .huttese {
@@ -385,7 +401,8 @@ a:hover {
 }
 
 .lorem-words {
-    text-align: right !important;
+    text-align: justify !important;
+    font-size: 24px !important;
 }
 
 .dont-words {
@@ -422,6 +439,14 @@ a:hover {
     border-radius: 40px;
     background-color: white !important;
     padding-top: 30px;
+}
+
+.socials {
+  width: 30px;
+  height: auto;
+  margin: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .glitch .screen{
@@ -1997,7 +2022,7 @@ a:hover {
 
     .droids {
         margin: 0 auto !important;
-        margin-bottom: 300px !important;
+        margin-bottom: 50px !important;
     }
 
 }
