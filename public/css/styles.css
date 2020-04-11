@@ -1896,16 +1896,19 @@ a:hover {
   .proj {
     font-size: 16px !important;
   }
+}
 
 @media only screen and (max-width: 1300px) {
     .huttese-first {
       font-size: 100px !important;
     }
+  }
 
 @media only screen and (max-width: 992px) {
   .proj {
     font-size: 32px !important;
   }
+}
 
 /* iPad Styles */
 
@@ -2102,7 +2105,7 @@ a:hover {
       font-size: 16px !important;
   }
   .proj {
-    font-size: 14px !important;
+    font-size: 16px !important;
   }
 
 }
