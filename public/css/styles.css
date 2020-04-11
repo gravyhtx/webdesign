@@ -254,10 +254,6 @@ a:hover {
     margin-bottom: 100px !important;
 }
 
-.mission-statement {
-    color: #343941 !important;
-}
-
 .quote {
     font-style: italic;
     background-color: rgba(255, 255, 255, 0.514);
@@ -357,8 +353,9 @@ a:hover {
 
 .blueish {
     background-color: #c0d0e4 !important;
-    color: #2f2f2f91 !important;
-    border: 30px solid white;
+    color: #1f1f1f91 !important;
+    border: 5px solid #4475ca31;
+    padding: 10px;
     padding-bottom: 50px;
 }
 
@@ -380,9 +377,9 @@ a:hover {
 }
 
 .huttese-first {
-  font-size: 200px;
-  margin-right: 40px;
-  text-align: left !important;
+    font-size: 200px;
+    margin-right: 40px;
+    text-align: left !important;
 }
 
 .huttese {
@@ -819,6 +816,7 @@ a:hover {
       clip: rect(66px, 9999px, 68px, 0);
     }
 }
+
 @-webkit-keyframes c2 {
     0% {
       clip: rect(80px, 9999px, 33px, 0);
@@ -1905,7 +1903,7 @@ a:hover {
 @media only screen and (max-width: 768px) {
     
     .column-words {
-        font-size: 12px;
+        font-size: 16px;
         margin-bottom: 20px !important;
     }
 
@@ -1913,15 +1911,37 @@ a:hover {
         margin-bottom: -20px;
         width: 70%;
     }
-    .blueish {
+
+    .lil-margin {
+      margin-top: -75px !important;
+      margin-bottom: -75px !important;
+    }
+
+    .proj {
+      margin-bottom: 50px;
+    }
+
+    .huttese {
+      font-size: 150px;
+    }
+    /* .blueish {
         padding: 5px !important;
         text-align: justify;
         margin: 1px !important;
-    }
+        display: block;
+    } */
 
     .words {
         padding: 10px !important;
         font-size: 16px;
+    }
+
+    .less-margin {
+      margin-bottom: 0px !important;
+    }
+
+    .huttese-first {
+      font-size: 60px !important;
     }
 
     .coffeet {
@@ -2010,14 +2030,29 @@ a:hover {
 
     .margin-bottom {
       margin-bottom: 400px;
-  }
-
-    .clients {
-        margin-top: 150px;
     }
 
+    .intro-header {
+      margin-top: 20px !important;
+    }
+
+    .lil-margin {
+      margin-top: 30px !important;
+      margin-bottom: 0px !important;
+    }
+
+    .clients {
+        font-size: 16px;
+        margin-top: 10px;
+    }
+
+    .clients-header {
+      margin: 0px !important;
+    }
+
+
     .clients-text {
-        margin-bottom: 50px;
+        margin-bottom: 20px;
     }
 
     .small-text {
@@ -2052,6 +2087,11 @@ a:hover {
         margin: 0 auto !important;
         margin-bottom: 50px !important;
     }
+
+    .lorem-words {
+      /* text-align: justify !important; */
+      font-size: 16px !important;
+  }
 
 }
 
